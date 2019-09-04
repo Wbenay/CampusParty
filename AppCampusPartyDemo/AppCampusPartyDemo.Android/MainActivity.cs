@@ -25,7 +25,7 @@ namespace AppCampusPartyDemo.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
-            AppCenter.Start("9D0A9EA5-0040-4D1F-A5FF-8B3703FEA9FF",
+            AppCenter.Start("b51c3996-1bb2-42df-ac53-22783e8d8ff6",
                    typeof(Analytics), typeof(Crashes));
             
         }
