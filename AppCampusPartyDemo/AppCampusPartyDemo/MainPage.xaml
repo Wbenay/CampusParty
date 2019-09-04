@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppCampusPartyDemo.MainPage">
+
+    <StackLayout>
+        <Grid Padding="10" RowSpacing="20">
+            <StackLayout Grid.Row="0">
+                <Image  Source="https://images.vexels.com/media/users/3/144838/isolated/preview/0e8ecc882dcf98521ef01d2163416fc9-logotipo-bitcoin-by-vexels.png"
+                   />
+
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label HorizontalOptions="Center"
+                           Text="Resumo diário: "
+                           TextColor="#343434"                            
+                           FontSize="Large"/>
+
+                    <Label HorizontalOptions="Center"
+                           Text="04/09/2019"
+                           TextColor="#343434"                            
+                           FontSize="Large"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Frame Grid.Row="1" CornerRadius="10" BackgroundColor="#343434">
+                <StackLayout>
+                    <Label HorizontalOptions="Center"
+                           Text="Preço de Abertura"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="Large"/>
+
+                    <Label x:Name="labelPrecoAbertura"
+                           Text="R$ 0,00"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2" CornerRadius="10" BackgroundColor="#343434">
+                <StackLayout>
+                    <Label HorizontalOptions="Center"
+                           Text="Preço de Fechamento"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="Large" />
+
+                    <Label x:Name="labelPrecoFechamento" 
+                           Text="R$ 0,00"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="40" />
+                </StackLayout>
+            </Frame>
+            <StackLayout Grid.Row="3" Margin="5,0,5,0">
+                <Button x:Name="buttonAtualizar"
+                        Text="Atualizar"
+                        TextColor="#343434"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        BackgroundColor="Orange" 
+                        HeightRequest="60"
+                        CornerRadius="10"/>
+            </StackLayout>
+            <ActivityIndicator Grid.Row="1" x:Name="indicatorRun" Color="Orange"  IsRunning="False" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
